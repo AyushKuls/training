@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.container1{
+    height: 100%;
+    display:flex;
+    width: 60%;
+    background-color: #ffc8dd;
+    justify-content: center;
+}
+
+.inside1{
+    margin: 20px;
+    width: 90%;
+}
+
+.flavors{
+    width: fit-content;
+    margin-top: 80px;
+    border-radius: 10%;
+    background-color: #fefae0;
+}
+
+.flavors h2{
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.fruit{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fruit li{
+    background-color: #fefae0;
+    text-align: center;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.Ingredients{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Ingredients ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 img{
+    padding: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.form li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.in{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{ 
+    width: 200px; 
+    height: 25px; 
+    margin: 2px; 
+} 
+
+select{
+    width: 205px; 
+    height: 25px; 
+    margin: 2px; 
+}
+
+@media (max-width: 1245px) {
+    body{
+        flex-direction: column;
+    }
+
+    .container1{
+        width: 100%;
+    }
+
+    .container2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .fruit{
+        flex-direction: column;
+    }
+
+    .fruit li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .container2 img{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
